@@ -52,16 +52,24 @@ body {
 
 /* Slide 2 - Deskripsi Bank */
 #slide2 {
-    background-color: #ffffff;
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
     color: #333;
-    padding-top: 50px;
+    padding: 0;
+}
+
+.timpa {
+    background: white;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 18%;
+    border-bottom-left-radius: 18%;
 }
 
 
 .bank-logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    /* position: absolute; */
+    /* top: 10px;
+    left: 10px; */
     width: 120px;
 }
 
@@ -80,6 +88,10 @@ body {
 .bank-description {
     width: 50%;
     text-align: left;
+}
+
+.listmisi {
+    margin-left: 20px;
 }
 
 /* Slide 3 - Profil Pegawai */
