@@ -4,78 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Company Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Slide 1: Animasi Logo Bank -->
     <div class="slide active" id="slide1">
-        <img src="image\BSI Logo.png" alt="BSI Logo" class="bank-logo-slide1">
+        <img src="image/BSI Logo.png" alt="BSI Logo" class="bank-logo-slide1">
     </div>
-
 
     <!-- Slide 2: Logo, Gambar Bank, Deskripsi, dan Visi Misi -->
     <div class="slide" id="slide2">
-    <div class="timpa">
-        <img src="bank-logo.png" alt="Bank Logo" class="bank-logo">
-        <div class="bank-content">
-            <img src="bank-image.jpg" alt="Bank" class="bank-image">
-            <div class="bank-description">
-                <h2>Tentang Bank</h2>
-                <br>
-                <p>Bank Syariah Indonesia (BSI) adalah bank syariah terbesar di Indonesia yang resmi diluncurkan pada 1 Februari 2021. Bank ini terbentuk dari hasil merger atau penggabungan tiga bank syariah milik BUMN, yaitu Bank Syariah Mandiri (BSM), Bank BRI Syariah, dan Bank BNI Syariah. Penggabungan ini bertujuan untuk menciptakan entitas perbankan syariah yang lebih kuat, efisien, dan kompetitif, baik di tingkat nasional maupun internasional. BSI beroperasi berdasarkan prinsip-prinsip syariah Islam, yang menghindari praktik riba (bunga) dan menerapkan sistem bagi hasil, jual beli, atau sewa sesuai dengan syariat Islam.</p>
-                <br>
-                <h2>Visi</h2><br>
-                <p>Top 10 Global Islamic Bank</p><br>
-                <h2>Misi</h2><br>
-                <div class="listmisi">
-                    <p><ul>
-                            <li>Memberikan akses solusi keuangan syariah di Indonesia Melayani >20 juta nasabah dan menjadi top 5 bank berdasarkan aset (500+T) dan nilai buku 50 T di tahun 2025</li>
-                            <li>Menjadi bank besar yang memberikan nilai terbaik bagi para pemegang saham Top 5 bank yang paling profitable di Indonesia (ROE 18%) dan valuasi kuat (PB>2).</li>
-                            <li>Menjadi perusahaan pilihan dan kebanggaan para talenta terbaik Indonesia Perusahaan dengan nilai yang kuat dan memberdayakan masyarakat serta berkomitmen pada pengembangan karyawan dengan budaya berbasis kinerja.</li>
-                        </ul>
-                    </p>
+        <div class="timpa">
+            <img src="bank-logo.png" alt="Bank Logo" class="bank-logo">
+            <div class="bank-content">
+                <img src="bank-image.jpg" alt="Bank" class="bank-image">
+                <div class="bank-description">
+                    <h2>Tentang Bank</h2>
+                    <p>Bank Syariah Indonesia (BSI) adalah bank syariah terbesar di Indonesia yang resmi diluncurkan pada 1 Februari 2021...</p>
+                    <h2>Visi</h2>
+                    <p>Top 10 Global Islamic Bank</p>
+                    <h2>Misi</h2>
+                    <ul class="listmisi">
+                        <li>Memberikan akses solusi keuangan syariah di Indonesia...</li>
+                        <li>Menjadi bank besar yang memberikan nilai terbaik bagi para pemegang saham...</li>
+                        <li>Menjadi perusahaan pilihan dan kebanggaan para talenta terbaik Indonesia...</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 
     <!-- Slide 3: Profil Pegawai -->
     <div class="slide" id="slide3">
-    <div class="timpa">
-        <h2>Profil Pegawai</h2>
-        <div class="profile-card">
-            <img src="image\foto_pegawai.png" alt="Foto Pegawai">
-            <h3>Nama Pegawai</h3>
-            <p>Jabatan: Manager</p>
-            <p>Target: Rp 500,000,000</p>
+        <div class="timpa">
+            <h2>Profil Pegawai</h2>
+            <div class="profile-card">
+                <img src="image/foto_pegawai.png" alt="Foto Pegawai">
+                <h3>Nama Pegawai</h3>
+                <p>Jabatan: Manager</p>
+                <p>Target: Rp 500,000,000</p>
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- Slide 4: Tabel Performa Marketing -->
     <div class="slide" id="slide4">
         <h2>Performa Marketing</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nama</th>
-                    <th>Nominal Booking</th>
-                    <th>Booking Cilem</th>
-                    <th>Total Booking</th>
-                </tr>
-            </thead>
-            <tbody id="marketing-table">
-                <tr>
-                    <td>Pegawai A</td>
-                    <td>Rp 1,000,000</td>
-                    <td>Rp 500,000</td>
-                    <td>Rp 1,500,000</td>
-                </tr>
-            </tbody>
-        </table>
+
+        <!-- Tabel Data -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped custom-table">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Nominal Booking</th>
+                        <th>Booking Cilem</th>
+                        <th>Total Booking</th>
+                    </tr>
+                </thead>
+                <tbody id="marketing-table">
+                    <!-- Data dari Google Sheets akan muncul di sini -->
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

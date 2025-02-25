@@ -1,44 +1,59 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelectorAll(".slide");
+document.addEventListener("DOMContentLoaded", function () {
     let currentSlide = 0;
-    let hasFirstSlideShown = false;
-    const transitionDuration = 1000; // Durasi animasi dalam ms
-    const slideInterval = 5000; // Waktu tiap slide
+    const slides = document.querySelectorAll(".slide");
 
     function showSlide(index) {
-        slides.forEach((slide, i) => {
-            if (i === index) {
-                slide.style.opacity = "0";
-                slide.style.display = "block";
-                setTimeout(() => {
-                    slide.style.opacity = "1";
-                }, 50);
-            } else {
-                slide.style.opacity = "0";
-                setTimeout(() => {
-                    slide.style.display = "none";
-                }, transitionDuration);
-            }
-        });
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
     }
 
     function nextSlide() {
-        if (!hasFirstSlideShown) {
-            hasFirstSlideShown = true;
-            currentSlide = 1;
-        } else {
-            currentSlide++;
-            if (currentSlide >= slides.length) {
-                currentSlide = 0; // Kembali ke slide pertama setelah slide terakhir
-            }
-        }
+        currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
     }
 
-    slides.forEach((slide) => {
-        slide.style.transition = `opacity ${transitionDuration / 1000}s ease-in-out`;
-    });
+    setInterval(nextSlide, 5000);
 
-    showSlide(currentSlide);
-    setInterval(nextSlide, slideInterval);
+    // ID Google Sheet
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+    const sheetID = "1tLIvExUGa_c_ZZpa15PlhcQzamsmf3nSa56RkCZdDsY";
+    const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?tqx=out:json`;
+
+    async function fetchGoogleSheetsData() {
+        try {
+            const response = await fetch(proxyUrl + sheetURL);
+            const text = await response.text();
+            
+            // Menghapus bagian awal dan akhir yang bukan JSON
+            const jsonText = text.substring(text.indexOf("{"), text.lastIndexOf("}") + 1);
+            const json = JSON.parse(jsonText);
+            const rows = json.table.rows;
+    
+            let table = document.getElementById("marketing-table");
+            table.innerHTML = ""; // Bersihkan tabel sebelum update
+    
+            rows.forEach(row => {
+                let nama = row.c[1]?.v || "-";
+                let nominal = row.c[2]?.v || 0;
+                let cilem = row.c[3]?.v || 0;
+                let total = row.c[4]?.v || 0;
+    
+                let newRow = table.insertRow();
+                newRow.innerHTML = `
+                    <td>${nama}</td>
+                    <td>Rp ${Number(nominal).toLocaleString()}</td>
+                    <td>Rp ${Number(cilem).toLocaleString()}</td>
+                    <td>Rp ${Number(total).toLocaleString()}</td>
+                `;
+            });
+        } catch (error) {
+            console.error("Gagal mengambil data dari Google Sheets", error);
+        }
+    }
+    
+    // Ambil data pertama kali
+    fetchGoogleSheetsData();
+
+    // Update setiap 10 detik
+    setInterval(fetchGoogleSheetsData, 10000);
 });
