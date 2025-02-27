@@ -120,6 +120,8 @@ body {
 #slide4 {
     background-color: #ffffff;
     padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 table {
