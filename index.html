@@ -79,13 +79,19 @@
     <script>
         new DataTable('#example', {
             ajax: 'https://script.google.com/macros/s/AKfycbyl14Pnw0acXd-wqNhQUatxgZma4WrdtxWVRhTo0cG-trzBDmRoBj1uzG0LMxHvqA/exec',
+            pageLength: 5, // Default tampil 10 data per halaman
+            lengthMenu: [[5, 10, 25, 50, 100], [5, 10, 25, 50, 100]], // Opsi dropdown untuk jumlah entries
             columns: [
                 { data: 'Nama' },
-                { data: 'Nominal Booking' },
-                { data: 'Booking Cilem' },
-                { data: 'Total Booking' },
-            ]
+                { data: 'Nominal Booking', render: $.fn.dataTable.render.number(',', '.', 0, 'Rp ') },
+                { data: 'Booking Cilem', render: $.fn.dataTable.render.number(',', '.', 0, 'Rp ') },
+                { data: 'Total Booking', render: $.fn.dataTable.render.number(',', '.', 0, 'Rp ') },
+            ],
+            pagingType: "simple_numbers", // Pagination dengan nomor halaman
+            
         });
+        
+        
     </script>
 </body>
 </html>
