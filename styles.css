@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -13,13 +15,13 @@ body {
 
 /* Slide General Styling */
 .slide {
-    position: absolute;
+    /* position: absolute;
     width: 100%;
     height: 100vh;
     padding: 20px;
     text-align: center;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; */
     display: none;
 }
 
@@ -34,13 +36,18 @@ body {
 }
 
 #slide1 img {
-    margin-top: 4cm;
+    margin-top: 5cm;
 }
 
 .bank-logo-slide1 {
     width: 400px; /* Sesuaikan ukuran logo */
     animation: scaleUp 3s forwards;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3)); /* Bayangan agar tidak menyatu dengan background */
+}
+
+.KCP {
+    animation: scaleUp 4s forwards;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 }
 
 
@@ -55,30 +62,48 @@ body {
     background: linear-gradient(60deg, #00A39D, #F6AD3C);
     color: #333;
     padding: 0;
+
 }
 
 .timpa {
-    background: white;
+    background-image: url(image/white-flower-textured-background-design.jpg);
+    background-size: cover;
     height: 100%;
     width: 100%;
-    border-top-right-radius: 18%;
-    border-bottom-left-radius: 18%;
+    border-top-right-radius: 250px;
+    border-bottom-left-radius: 250px;
 }
 
 
 .bank-logo {
     /* position: absolute; */
-    /* top: 10px;
-    left: 10px; */
-    width: 120px;
+    padding: 20px;
+    padding-left: 50px;
+    width: 230px;
+    justify-content: flex-start;
+    /* border: solid black; */
+}
+
+.bank-logo img {
+    width: 170px;
 }
 
 .bank-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 50px;
+    /* align-items: center;
+    justify-content: center; */
+    /* gap: 10px; */
+    /* border: solid black; */
+}
+
+.gambar-bank {
+    /* border: solid black; */
+    width: 600px;
+}
+
+.atas{
+    margin-left: 300px;
+    /* border: solid black; */
 }
 
 .bank-image {
@@ -88,16 +113,101 @@ body {
 .bank-description {
     width: 50%;
     text-align: left;
+    font-size: 25px;
+    padding-top: 50px;
 }
 
-.listmisi {
-    margin-left: 20px;
-}
-
-/* Slide 3 - Profil Pegawai */
+/* Slide 3 - Visi Misi */
 #slide3 {
     background: linear-gradient(60deg, #00A39D, #F6AD3C);
     padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+
+.list-misi {
+    width: 50%;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.list-misi p {
+    font-size: 30px;
+}
+
+.list-misi h1 {
+    font-weight: bold;
+}
+
+/* Slide 4-??? - Profil Pimpinan dan Pegawai */
+#slide4 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.jabatan h2 {
+    color: #00A39D;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.wrap-pegawai {
+    width: 754px;
+    height: 523px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-card {
+    display: flex;
+    width: 754px;
+    height: 523px;
+    gap: 4cm;
+    margin-top: 1cm;
+}
+
+.card-suratman {
+    width: 298px;
+    height: 345px;
+    background: white;
+    border-radius: 8%;
+    padding-top: 30px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.card-suratman img {
+    width: 223px;
+    height: 223px;
+    margin-bottom: 15px;
+}
+
+.card-azizah {
+    width: 298px;
+    height: 345px;
+    background: white;
+    border-radius: 8%;
+    padding-top: 30px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.card-azizah img {
+    width: 223px;
+    height: 223px;
+    margin-bottom: 0px;
+}
+
+.card-azizah h3 {
+    margin-bottom: -2px;
 }
 
 .profile-card {
@@ -116,8 +226,9 @@ body {
     border-radius: 50%;
 }
 
-/* Slide 4 - Tabel Performa Marketing */
-#slide4 {
+
+/* Slide ??? - Tabel Performa Marketing */
+#slide10 {
     background-color: #ffffff;
     padding-top: 50px;
     padding-left: 100px;
@@ -145,12 +256,7 @@ th {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #fff;
-    overflow: hidden;
+    /* font-family: Arial, sans-serif; */
 }
 
 /* Slide General Styling */
@@ -162,13 +268,13 @@ body {
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    display: none;
+    display: block;
 }
 
-.slide.active {
+/* .slide.active {
     display: block;
     opacity: 1;
-}
+} */
 
 /* Slide 4 - Tabel Performa Marketing */
 .custom-table {
