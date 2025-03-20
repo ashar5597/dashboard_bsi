@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[index].classList.add("active");
     }
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
+    // function nextSlide() {
+    //     currentSlide = (currentSlide + 1) % slides.length;
+    //     showSlide(currentSlide);
+    // }
 
-    setInterval(nextSlide, 5000);
+    // setInterval(nextSlide, 5000);
 
     
 });
