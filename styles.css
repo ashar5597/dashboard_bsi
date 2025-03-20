@@ -290,8 +290,8 @@ body {
     padding-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
-    display: block;
-    opacity: 1;
+    /* display: block;
+    opacity: 1; */
 }
 
 table {
