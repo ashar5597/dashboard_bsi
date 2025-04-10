@@ -1,8 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     let currentSlide = 0;
     const slides = document.querySelectorAll(".slide");
+    // const slideKe6 = 13;
     const logo = document.getElementById("logoslide1");
     const text = document.getElementById("textslide1");
+
+    // slides.forEach((slide, index) => {
+    //     if (index === slideKe6) {
+    //         slide.classList.add("active");
+    //         slide.style.display = "block";
+    //     } else {
+    //         slide.classList.remove("active");
+    //         slide.style.display = "none";
+    //     }
+    // });
 
     function showSlide(index) {
         slides.forEach(slide => slide.classList.remove("active"));

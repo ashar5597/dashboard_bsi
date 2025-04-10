@@ -14,7 +14,7 @@ body {
 }
 
 /* Slide General Styling */
-.slide {
+/* .slide {
     /* position: absolute;
     width: 100%;
     height: 100vh;
@@ -22,8 +22,8 @@ body {
     text-align: center;
     opacity: 0;
     transition: opacity 1s ease-in-out; */
-    display: none;
-}
+    /* display: none; */
+/* } */
 
 .slide.active {
     display: block;
@@ -147,6 +147,60 @@ body {
     /* display: block;
     opacity: 1; */
 }
+#slide5 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide6 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide7 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide8 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide9 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide10 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide11 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide12 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide13 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
 
 .container {
     display: grid;
@@ -222,8 +276,8 @@ body {
 
 .card-radit h3 {
     font-size: 1.5rem;
-    margin-top: 5px;
-    margin-bottom: -2px;
+    margin-top: 14px;
+    font-weight: bolder;
 }
 
 .card-anisa {
@@ -236,14 +290,17 @@ body {
 }
 
 .card-anisa h3 {
-    margin-top: 5px;
+    margin-top: 20px;
     font-size: 2rem;
+    font-weight: bolder;
 }
 
 .wrap-card-maya {
     justify-content: center;
     align-items: center;
     display: grid;
+    height: 489px;
+    width: 477px;
 }
 
 .card-maya {
@@ -257,16 +314,18 @@ body {
 }
 
 .card-maya h3 {
-    margin-bottom: -2px;
-    font-size: 1.7rem;
+    margin-top: 5px;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .wrap-card-satpam {
     display: flex;
     width: 1032px;
-    height: 489;
+    height: 400px;
     gap: 1.5cm;
-    margin-top: -1cm;
+    margin-top: 1cm;
+
 }
 
 .card-andi {
@@ -279,17 +338,38 @@ body {
 }
 
 .card-andi h3 {
-    font-size: 1.7rem;
-    margin-bottom: -2px;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 4px;
+}
+
+.card-mikro {
+    width: 220.83px;
+    height: 255.66px;
+    background: white;
+    border-radius: 8%;
+    padding-top: 30px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.card-mikro img {
+    width: 165.25px;
+    height: 165.25px;
+}
+
+.card-mikro h3 {
+    margin-top: 10px;
 }
 
 
 /* Slide ??? - Tabel Performa Marketing */
-#slide10 {
+#slide14 {
     background: radial-gradient(farthest-corner, white, #bbfffd);
     padding-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
+    height: 100vh;
+    width: 100%;
     /* display: block;
     opacity: 1; */
 }
@@ -367,4 +447,24 @@ th {
 
 .custom-table tbody tr:last-child td {
     border-bottom: none;
+}
+
+button {
+    background-color: #00A9A2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008C88; /* versi lebih gelap saat hover */
+}
+
+.tombol {
+    position: relative;
+    margin-right: -30.5cm;
 }
