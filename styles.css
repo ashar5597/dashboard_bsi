@@ -198,8 +198,8 @@ body {
 #slide13 {
     background: linear-gradient(60deg, #00A39D, #F6AD3C);
     padding: 0;
-    /* display: block;
-    opacity: 1; */
+    display: block;
+    opacity: 1;
 }
 
 .container {
@@ -233,17 +233,22 @@ body {
 
 .card-suratman {
     width: 298px;
-    height: 345px;
+    height: 420px;
     background: white;
     border-radius: 8%;
     padding-top: 30px;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    margin-top: -2cm;
+}
+
+.card-suratman h3 {
+    margin-top: 5px;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .card-suratman img {
-    width: 223px;
-    height: 223px;
-    margin-bottom: 15px;
+    border-radius: 15%;
 }
 
 .card-azizah {
@@ -259,15 +264,18 @@ body {
     width: 223px;
     height: 223px;
     margin-bottom: 0px;
+    border-radius: 7%;
 }
 
 .card-azizah h3 {
     margin-bottom: -2px;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .card-radit {
     width: 298px;
-    height: 345px;
+    height: 400px;
     background: white;
     border-radius: 8%;
     padding-top: 30px;
@@ -280,9 +288,13 @@ body {
     font-weight: bolder;
 }
 
+.card-radit img {
+    border-radius: 7%;
+}
+
 .card-anisa {
     width: 298px;
-    height: 345px;
+    height: 400px;
     background: white;
     border-radius: 8%;
     padding-top: 30px;
@@ -295,17 +307,21 @@ body {
     font-weight: bolder;
 }
 
+.card-anisa img {
+    border-radius: 7%;
+}
+
 .wrap-card-maya {
     justify-content: center;
     align-items: center;
     display: grid;
     height: 489px;
-    width: 477px;
+    width: 700px;
 }
 
 .card-maya {
     width: 298px;
-    height: 345px;
+    height: 390px;
     background: white;
     border-radius: 8%;
     padding-top: 30px;
@@ -317,6 +333,12 @@ body {
     margin-top: 5px;
     font-size: 2rem;
     font-weight: bolder;
+}
+
+.card-maya img {
+    height: 260px;
+    width: 200px;
+    border-radius: 7%;
 }
 
 .wrap-card-satpam {
@@ -345,7 +367,7 @@ body {
 
 .card-mikro {
     width: 220.83px;
-    height: 255.66px;
+    height: 300px;
     background: white;
     border-radius: 8%;
     padding-top: 30px;
@@ -354,11 +376,15 @@ body {
 
 .card-mikro img {
     width: 165.25px;
-    height: 165.25px;
+    height: 180px;
+    border-radius: 7%;
 }
 
 .card-mikro h3 {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 4px;
 }
 
 
