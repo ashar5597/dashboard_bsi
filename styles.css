@@ -171,8 +171,8 @@ body {
 #slide8 {
     background: linear-gradient(60deg, #00A39D, #F6AD3C);
     padding: 0;
-    display: block;
-    opacity: 1;
+    /* display: block;
+    opacity: 1; */
 }
 #slide9 {
     background: linear-gradient(60deg, #00A39D, #F6AD3C);
