@@ -72,6 +72,9 @@ body {
     width: 100%;
     border-top-right-radius: 250px;
     border-bottom-left-radius: 250px;
+    margin: 0;
+    padding: 0;
+    /* min-height: 100vh; */
 }
 
 
@@ -140,7 +143,7 @@ body {
     font-weight: bold;
 }
 
-/* Slide 4-??? - Profil Pimpinan dan Pegawai */
+/* Slide 4-18 - Profil Pimpinan dan Pegawai */
 #slide4 {
     background: linear-gradient(60deg, #00A39D, #F6AD3C);
     padding: 0;
@@ -168,8 +171,8 @@ body {
 #slide8 {
     background: linear-gradient(60deg, #00A39D, #F6AD3C);
     padding: 0;
-    /* display: block;
-    opacity: 1; */
+    display: block;
+    opacity: 1;
 }
 #slide9 {
     background: linear-gradient(60deg, #00A39D, #F6AD3C);
@@ -198,8 +201,32 @@ body {
 #slide13 {
     background: linear-gradient(60deg, #00A39D, #F6AD3C);
     padding: 0;
-    display: block;
-    opacity: 1;
+    /* display: block;
+    opacity: 1; */
+}
+#slide14 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide15 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide16 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
+}
+#slide17 {
+    background: linear-gradient(60deg, #00A39D, #F6AD3C);
+    padding: 0;
+    /* display: block;
+    opacity: 1; */
 }
 
 .container {
@@ -389,7 +416,7 @@ body {
 
 
 /* Slide ??? - Tabel Performa Marketing */
-#slide14 {
+#slide18 {
     background: radial-gradient(farthest-corner, white, #bbfffd);
     padding-top: 50px;
     padding-left: 100px;

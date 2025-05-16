@@ -5,15 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const logo = document.getElementById("logoslide1");
     const text = document.getElementById("textslide1");
 
-    slides.forEach((slide, index) => {
-        if (index === slideKe6) {
-            slide.classList.add("active");
-            slide.style.display = "block";
-        } else {
-            slide.classList.remove("active");
-            slide.style.display = "none";
-        }
-    });
+    // slides.forEach((slide, index) => {
+    //     if (index === slideKe6) {
+    //         slide.classList.add("active");
+    //         slide.style.display = "block";
+    //     } else {
+    //         slide.classList.remove("active");
+    //         slide.style.display = "none";
+    //     }
+    // });
 
     function showSlide(index) {
         slides.forEach(slide => slide.classList.remove("active"));
